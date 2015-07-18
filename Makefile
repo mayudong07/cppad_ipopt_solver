@@ -130,7 +130,10 @@ include nbproject/Makefile-variables.mk
 
 install: 
 	cp -r $(CND_ARTIFACT_PATH_Debug) /usr/local/lib/lib$(PROJECTNAME).so
-	rm -r /usr/local/include/$(PROJECTNAME)
+	if [ -d "/usr/local/include/$(PROJECTNAME)" ]; \
+	then \
+	    rm -r /usr/local/include/$(PROJECTNAME); \
+	fi
 	mkdir /usr/local/include/$(PROJECTNAME)/
 	cp -r *.h /usr/local/include/$(PROJECTNAME)/
 	

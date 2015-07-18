@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f2" displayName="ExpNode" projectFiles="true">
+        <itemPath>AbstractExpNode.h</itemPath>
+        <itemPath>ActiveNode.h</itemPath>
+        <itemPath>ExpNodeADNumber.h</itemPath>
+        <itemPath>ExpNodeOperations.h</itemPath>
+        <itemPath>PassiveNode.h</itemPath>
+        <itemPath>TempNode.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Operater" projectFiles="true">
+        <itemPath>AbstractOperator.h</itemPath>
+        <itemPath>Addition.h</itemPath>
+        <itemPath>Division.h</itemPath>
+        <itemPath>Exponential.h</itemPath>
+        <itemPath>Logarithm.h</itemPath>
+        <itemPath>Multiplication.h</itemPath>
+        <itemPath>Power.h</itemPath>
+        <itemPath>Subtraction.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="PythonInterface" projectFiles="true">
+        <itemPath>PyVariable.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="Solver" projectFiles="true">
+        <itemPath>CppADSolver.h</itemPath>
+      </logicalFolder>
+      <itemPath>OptProblem.h</itemPath>
+      <itemPath>OptStructure.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f2" displayName="ExpNode" projectFiles="true">
+        <itemPath>AbstractExpNode.cpp</itemPath>
+        <itemPath>ActiveNode.cpp</itemPath>
+        <itemPath>ExpNodeADNumber.cpp</itemPath>
+        <itemPath>PassiveNode.cpp</itemPath>
+        <itemPath>TempNode.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Operator" projectFiles="true">
+        <itemPath>AbstractOperator.cpp</itemPath>
+        <itemPath>Addition.cpp</itemPath>
+        <itemPath>Division.cpp</itemPath>
+        <itemPath>Exponential.cpp</itemPath>
+        <itemPath>Logarithm.cpp</itemPath>
+        <itemPath>Multiplication.cpp</itemPath>
+        <itemPath>Power.cpp</itemPath>
+        <itemPath>Subtraction.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="PythonInterface" projectFiles="true">
+        <itemPath>PyVariable.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="Solver" projectFiles="true">
+        <itemPath>CppADSolver.cpp</itemPath>
+      </logicalFolder>
+      <itemPath>OptProblem.cpp</itemPath>
+      <itemPath>OptStructure.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f3"
+                     displayName="OperatorTests"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/OperatorTests.cpp</itemPath>
+        <itemPath>tests/OperatorTests.h</itemPath>
+        <itemPath>tests/OperatorTestsRunner.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4"
+                     displayName="OptimizationTests"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/OptimizationTests.cpp</itemPath>
+        <itemPath>tests/OptimizationTests.h</itemPath>
+        <itemPath>tests/OptimizationTestsRunner.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2"
+                     displayName="OptProbelmTests"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/OptProbelmTests.cpp</itemPath>
+        <itemPath>tests/OptProbelmTests.h</itemPath>
+        <itemPath>tests/OptProbelmTestsRunner.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1"
+                     displayName="PackageTests"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/ExpNodeTests.cpp</itemPath>
+        <itemPath>tests/ExpNodeTests.h</itemPath>
+        <itemPath>tests/PackageTestsRunner.cpp</itemPath>
+        <itemPath>tests/PyVariableTests.cpp</itemPath>
+        <itemPath>tests/PyVariableTests.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>Makefile</itemPath>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+    <Elem>../ADOLC_wrapper</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <architecture>2</architecture>
+          <incDir>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+          <commandLine>-std=c++0x</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/local/lib</pElem>
+            <pElem>/usr/local/lib64</pElem>
+          </linkerAddLib>
+          <linkerDynSerch>
+            <pElem>/usr/local/lib</pElem>
+            <pElem>/usr/local/lib64</pElem>
+          </linkerDynSerch>
+          <linkerLibItems>
+            <linkerOptionItem>-lcppad_ipopt</linkerOptionItem>
+            <linkerOptionItem>-lipopt</linkerOptionItem>
+          </linkerLibItems>
+          <commandLine>`PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig: /usr/bin/pkg-config --libs ipopt`</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="AbstractExpNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractExpNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractOperator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractOperator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ActiveNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ActiveNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Addition.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Addition.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CppADSolver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CppADSolver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Division.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Division.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ExpNodeADNumber.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ExpNodeADNumber.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ExpNodeOperations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exponential.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Exponential.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Logarithm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Logarithm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Multiplication.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Multiplication.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OptProblem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OptProblem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OptStructure.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OptStructure.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PassiveNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PassiveNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Power.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Power.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PyVariable.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PyVariable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Subtraction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Subtraction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TempNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TempNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles">
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>dist/Debug/GNU-Linux-x86</pElem>
+            <pElem>/usr/local/lib</pElem>
+            <pElem>/usr/local/lib64</pElem>
+          </linkerAddLib>
+          <linkerDynSerch>
+            <pElem>/usr/local/lib</pElem>
+            <pElem>/usr/local/lib64</pElem>
+          </linkerDynSerch>
+          <linkerLibItems>
+            <linkerOptionItem>-lipopt -lcppad_ipopt</linkerOptionItem>
+            <linkerOptionItem>-lColPack</linkerOptionItem>
+          </linkerLibItems>
+          <commandLine>`PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig: /usr/bin/pkg-config --libs ipopt`</commandLine>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f4">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f4</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="tests/ExpNodeTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ExpNodeTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/OperatorTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OperatorTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/OperatorTestsRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OptProbelmTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OptProbelmTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/OptProbelmTestsRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OptimizationTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OptimizationTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/OptimizationTestsRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/PackageTestsRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/PyVariableTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/PyVariableTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="AbstractExpNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractExpNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractOperator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractOperator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ActiveNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ActiveNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Addition.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Addition.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CppADSolver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CppADSolver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Division.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Division.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ExpNodeADNumber.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ExpNodeADNumber.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ExpNodeOperations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exponential.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Exponential.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Logarithm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Logarithm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Multiplication.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Multiplication.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OptProblem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OptProblem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OptStructure.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OptStructure.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PassiveNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PassiveNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Power.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Power.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PyVariable.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PyVariable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Subtraction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Subtraction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TempNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TempNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f4">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f4</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="tests/ExpNodeTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ExpNodeTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/OperatorTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OperatorTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/OperatorTestsRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OptProbelmTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OptProbelmTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/OptProbelmTestsRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OptimizationTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/OptimizationTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/OptimizationTestsRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/PackageTestsRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/PyVariableTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/PyVariableTests.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
